@@ -19,13 +19,14 @@ Seam carving is an algorithm for content-aware image resizing that removes low-e
 ### 1. Set Up Virtual Environment (Recommended)
 
 Using a virtual environment helps manage dependencies and avoid conflicts.
+Virtual environment just a folder to store the python dependencies. Like a "Local Library of header files"
 
 #### On macOS/Linux:
 ```bash
 # Create virtual environment
 python -m venv venv
 
-# Activate virtual environment
+# Activate virtual environment (WSL)
 source venv/bin/activate
 ```
 
