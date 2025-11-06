@@ -48,7 +48,7 @@ jobs:
 
     # 8. Upload processed images as artifacts
     - name: Upload processed images
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: processed-images
         path: |
