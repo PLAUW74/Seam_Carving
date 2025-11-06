@@ -7,6 +7,7 @@ import numpy as np
 import argparse
 import sys
 
+
 def compute_energy(image):
     """
     Calculates the energy map of an image using the Sobel operator.
@@ -27,6 +28,7 @@ def compute_energy(image):
 
     return energy_map
 
+
 def find_vertical_seam_dp(energy_map):
     """
     Finds the lowest-energy vertical seam using dynamic programming.
@@ -45,13 +47,13 @@ def find_vertical_seam_dp(energy_map):
         for j in range(width):
             # Handle the left boundary
             if j == 0:
-                min_parent_energy = min(M[i-1, j], M[i-1, j+1])
+                min_parent_energy = min(M[i - 1, j], M[i - 1, j + 1])
             # Handle the right boundary
             elif j == width - 1:
-                min_parent_energy = min(M[i-1, j-1], M[i-1, j])
+                min_parent_energy = min(M[i - 1, j - 1], M[i - 1, j])
             # Handle the general case
             else:
-                min_parent_energy = min(M[i-1, j-1], M[i-1, j], M[i-1, j+1])
+                min_parent_energy = min(M[i - 1, j - 1], M[i - 1, j], M[i - 1, j + 1])
 
             M[i, j] = energy_map[i, j] + min_parent_energy
 
@@ -63,21 +65,22 @@ def find_vertical_seam_dp(energy_map):
 
     # Backtrack from the last row to the first
     for i in range(height - 2, -1, -1):
-        current_col = seam[i+1]
+        current_col = seam[i + 1]
 
         # Handle the left boundary
         if current_col == 0:
-            j = np.argmin(M[i, 0:2]) # Check col 0 and 1
+            j = np.argmin(M[i, 0:2])  # Check col 0 and 1
         # Handle the right boundary
         elif current_col == width - 1:
-            j = np.argmin(M[i, width-2:width]) + (width - 2) # Check col w-2 and w-1
+            j = np.argmin(M[i, width - 2:width]) + (width - 2)
         # Handle the general case
         else:
-            j = np.argmin(M[i, current_col-1:current_col+2]) + (current_col - 1)
+            j = np.argmin(M[i, current_col - 1:current_col + 2]) + (current_col - 1)
 
         seam[i] = j
 
     return seam
+
 
 def remove_vertical_seam(image, seam):
     """
@@ -96,9 +99,10 @@ def remove_vertical_seam(image, seam):
         new_image[i, :col_to_remove] = image[i, :col_to_remove]
 
         # Copy pixels to the right of the seam
-        new_image[i, col_to_remove:] = image[i, col_to_remove+1:]
+        new_image[i, col_to_remove:] = image[i, col_to_remove + 1:]
 
     return new_image
+
 
 def carve(image, num_seams, direction):
     """
@@ -127,23 +131,41 @@ def carve(image, num_seams, direction):
             carved_image = carved_image.transpose(1, 0, 2)
 
         # Optional: Print progress
-        print(f"Removed seam {k+1}/{num_seams} (DP)")
+        print(f"Removed seam {k + 1}/{num_seams} (DP)")
 
     return carved_image
 
+
 def main():
-    parser = argparse.ArgumentParser(description='Dynamic Programming Seam Carving')
-    parser.add_argument('input_image', type=str, help='Path to the input image')
-    parser.add_argument('output_image', type=str, help='Path to save the carved image')
-    parser.add_argument('--num_seams', type=int, default=50, help='Number of seams to remove')
-    parser.add_argument('--direction', type=str, default='vertical', choices=['vertical', 'horizontal'], help='Direction of seams to remove')
+    parser = argparse.ArgumentParser(
+        description='Dynamic Programming Seam Carving'
+    )
+    parser.add_argument(
+        'input_image', type=str, help='Path to the input image'
+    )
+    parser.add_argument(
+        'output_image', type=str, help='Path to save the carved image'
+    )
+    parser.add_argument(
+        '--num_seams',
+        type=int,
+        default=50,
+        help='Number of seams to remove'
+    )
+    parser.add_argument(
+        '--direction',
+        type=str,
+        default='vertical',
+        choices=['vertical', 'horizontal'],
+        help='Direction of seams to remove'
+    )
 
     args = parser.parse_args()
 
     # Read the image
     image = cv2.imread(args.input_image)
     if image is None:
-        print(f"Error: Unable to read image from {args.input_imge}")
+        print(f"Error: Unable to read image from {args.input_image}")
         sys.exit(1)
 
     print(f"Original image size: {image.shape}")
@@ -156,6 +178,7 @@ def main():
     # Save the result
     cv2.imwrite(args.output_image, carved_image)
     print(f"Successfully saved carved image to {args.output_image}")
+
 
 if __name__ == '__main__':
     main()
