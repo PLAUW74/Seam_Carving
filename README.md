@@ -30,13 +30,13 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-#### On Windows:
+#### On Windows: (cmd line)
 ```bash
 # Create virtual environment
-python -m venv venv
+python -m venv <Location>
 
 # Activate virtual environment
-source venv/bin/activate
+<Location>\venv\Scripts\activate.bat
 ```
 
 ### 2. Install Dependencies
