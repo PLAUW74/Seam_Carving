@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 import argparse
 import sys
+import time
 
 
 def compute_energy(image):
@@ -145,10 +146,16 @@ def main():
 
     print(f"Original image size: {image.shape}")
 
+     # record start time
+    start = time.time() 
+
     # Perform seam carving
     carved_image = carve(image, args.num_seams, args.direction)
-
     print(f"Carved image size: {carved_image.shape}")
+
+     # record end time
+    end = time.time();
+    print(f"Time Taken: {end - start:.4f} seconds")
 
     # Save result
     cv2.imwrite(args.output_image, carved_image)
