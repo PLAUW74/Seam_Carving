@@ -146,14 +146,14 @@ def main():
 
     print(f"Original image size: {image.shape}")
 
-     # record start time
-    start = time.time() 
+    # record start time
+    start = time.time()
 
     # Perform seam carving
     carved_image = carve(image, args.num_seams, args.direction)
     print(f"Carved image size: {carved_image.shape}")
 
-     # record end time
+    # record end time
     end = time.time()
     print(f"Time Taken: {end - start:.4f} seconds")
 

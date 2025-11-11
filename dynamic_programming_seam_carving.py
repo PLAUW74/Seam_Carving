@@ -138,7 +138,7 @@ def main():
         sys.exit(1)
 
     print(f"Original image size: {image.shape}")
-    
+
     # record start time
     start = time.time()
 
