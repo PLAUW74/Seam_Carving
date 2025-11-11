@@ -140,13 +140,13 @@ def main():
     print(f"Original image size: {image.shape}")
     
     # record start time
-    start = time.time();
+    start = time.time()
 
     carved_image = carve(image, args.num_seams, args.direction)
     print(f"Carved image size: {carved_image.shape}")
 
     # record end time
-    end = time.time();
+    end = time.time()
     print(f"Time Taken: {end - start:.4f} seconds")
 
     cv2.imwrite(args.output_image, carved_image)

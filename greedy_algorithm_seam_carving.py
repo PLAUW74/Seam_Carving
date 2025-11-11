@@ -154,7 +154,7 @@ def main():
     print(f"Carved image size: {carved_image.shape}")
 
      # record end time
-    end = time.time();
+    end = time.time()
     print(f"Time Taken: {end - start:.4f} seconds")
 
     # Save result
