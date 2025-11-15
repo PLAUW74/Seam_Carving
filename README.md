@@ -8,22 +8,8 @@ Source Files are:
 - greedy_algorithm_seam_carving.py (Greedy Method)
 - image_comparison_viewer.py
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Bonus:
+- CI/CD (using Github Actions, refer to /.github/workflows/ci-cd.yml)
 
 
 
