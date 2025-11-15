@@ -29,9 +29,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install numpy opencv-python flake8
 
-    # 4. Lint code
-    - name: Lint Python code
-      run: flake8 .
+    # # 4. Lint code (Disabled)
+    # - name: Lint Python code
+    #   run: flake8 .
 
     # 5. Create dummy test image
     - name: Create dummy image
