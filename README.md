@@ -1,7 +1,7 @@
 # Seam Carving Application & File Structure
 
 Quick Start Guide
-- Find the folder "SeamCarving Application", refer to HOWTOUSE.txt to run the application.
+- Ready-built executables in the folder "SeamCarvingApplication", refer to HOW_TO_USE.txt file inside the folder to run the applications.
 
 Source Files are:
 - dynamic_programming_seam_carving.py (Dynamic Programming)
