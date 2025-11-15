@@ -4,9 +4,9 @@ Quick Start Guide
 - Find the folder "SeamCarving Application", refer to HOWTOUSE.txt to run the application.
 
 Source Files are:
-
-
-
+- dynamic_programming_seam_carving.py (Dynamic Programming)
+- greedy_algorithm_seam_carving.py (Greedy Method)
+- image_comparison_viewer.py
 
 
 
