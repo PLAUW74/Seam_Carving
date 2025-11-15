@@ -1,0 +1,2 @@
+Quick Start Guide
+- Find the folder "SeamCarving Application", refer to HOWTOUSE.txt to run the application.
