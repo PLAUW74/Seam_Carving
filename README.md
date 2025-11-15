@@ -1,4 +1,33 @@
-# Seam Carving Implementation
+# Seam Carving Application & File Structure
+
+Quick Start Guide
+- Find the folder "SeamCarving Application", refer to HOWTOUSE.txt to run the application.
+
+Source Files are:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Seam Carving Implementation (IF YOU WANT TO BUILD FROM SCRATCH)
 
 This project implements content-aware image resizing using seam carving algorithms, including both dynamic programming and greedy approaches.
 
