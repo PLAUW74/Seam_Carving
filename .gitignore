@@ -1,4 +1,28 @@
-# Ignore Python virtual environments
-venv/
+# Python cache files
 __pycache__/
 *.pyc
+
+# Python Virtual Environment
+# (Matches the 'venv' folder from your README)
+venv/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# Executables in the application folder
+# We want to track the .bat and .txt, but not the .exe files
+SeamCarvingApp/*.exe
+
+# Generated output images in the application folder
+# This will ignore outputs but keep input.jpg
+SeamCarvingApp/images/output_*.jpg
+SeamCarvingApp/images/SeamCarving_*.jpg
+SeamCarvingApp/images/comparison.jpg
+SeamCarvingApp/images/interactive_result.jpg
+
+# OS / IDE specific files
+.vscode/
+.DS_Store
+*.log
