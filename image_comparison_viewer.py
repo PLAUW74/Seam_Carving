@@ -8,6 +8,31 @@ import sys
 import os
 
 
+def find_image_path(input_path):
+    """
+    Finds a valid image path.
+    If 'input_path' is not found, it tries appending
+    .jpg, .jpeg, and .png.
+    """
+    if os.path.exists(input_path):
+        return input_path
+
+    # Check for other extensions
+    for ext in ['.jpg', '.jpeg', '.png']:
+        path_with_ext = input_path + ext
+        if os.path.exists(path_with_ext):
+            print(f"Input '{input_path}' not found, using '{path_with_ext}'")
+            return path_with_ext
+
+    # Check if user already included extension but file is missing
+    base, ext = os.path.splitext(input_path)
+    if ext in ['.jpg', '.jpeg', '.png']:
+         if os.path.exists(base):
+            print(f"Input '{input_path}' not found, using '{base}'")
+            return base
+
+    return None
+
 def create_comparison_image(input_path, output_path, layout='vertical'):
     """
     Creates a comparison image showing input above and output below
@@ -22,6 +47,7 @@ def create_comparison_image(input_path, output_path, layout='vertical'):
         Combined comparison image
     """
     # Read both images
+    # Paths are now guaranteed to be valid from main()
     input_img = cv2.imread(input_path)
     output_img = cv2.imread(output_path)
 
@@ -152,14 +178,27 @@ def main():
     args = parser.parse_args()
 
     print("Creating comparison image...")
-    print(f"Input: {args.input_image}")
-    print(f"Output: {args.output_image}")
+
+    # --- NEW: Find full paths ---
+    input_path = find_image_path(args.input_image)
+    output_path = find_image_path(args.output_image)
+
+    if input_path is None:
+        print(f"Error: Unable to find input image '{args.input_image}'")
+        sys.exit(1)
+
+    if output_path is None:
+        print(f"Error: Unable to find output image '{args.output_image}'")
+        sys.exit(1)
+
+    print(f"Input: {input_path}")
+    print(f"Output: {output_path}")
     print(f"Layout: {args.layout}")
 
     # Create comparison
     comparison = create_comparison_image(
-        args.input_image,
-        args.output_image,
+        input_path,
+        output_path,
         args.layout
     )
 

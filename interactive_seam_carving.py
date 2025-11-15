@@ -7,6 +7,7 @@ import cv2
 import numpy as np
 import sys
 import argparse
+import os
 
 # --- Import functions from your existing DP script ---
 try:
@@ -20,6 +21,31 @@ except ImportError:
     print("Please make sure this script is in the same folder.")
     sys.exit(1)
 
+
+def find_image_path(input_path):
+    """
+    Finds a valid image path.
+    If 'input_path' is not found, it tries appending
+    .jpg, .jpeg, and .png.
+    """
+    if os.path.exists(input_path):
+        return input_path
+
+    # Check for other extensions
+    for ext in ['.jpg', '.jpeg', '.png']:
+        path_with_ext = input_path + ext
+        if os.path.exists(path_with_ext):
+            print(f"Input '{input_path}' not found, using '{path_with_ext}'")
+            return path_with_ext
+
+    # Check if user already included extension but file is missing
+    base, ext = os.path.splitext(input_path)
+    if ext in ['.jpg', '.jpeg', '.png']:
+         if os.path.exists(base):
+            print(f"Input '{input_path}' not found, using '{base}'")
+            return base
+
+    return None
 
 # --- We need a modified carve function that works on a copy ---
 # This is slightly different from the one in the main script
@@ -111,7 +137,14 @@ def main():
     )
     args = parser.parse_args()
 
-    original_image = cv2.imread(args.input_image)
+    input_image_path = find_image_path(args.input_image)
+
+    if input_image_path is None:
+        print(f"Error: Unable to find image file for '{args.input_image}'")
+        sys.exit(1)
+
+    original_image = cv2.imread(input_image_path)
+    
     if original_image is None:
         print(f"Error: Unable to read image from {args.input_image}")
         sys.exit(1)
