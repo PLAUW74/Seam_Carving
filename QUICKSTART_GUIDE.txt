@@ -1,2 +1,0 @@
-Quick Start Guide
-- Ready-built executables in the folder "SeamCarvingApplication", refer to HOW_TO_USE.txt file inside the folder to run the applications.
