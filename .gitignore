@@ -11,9 +11,8 @@ build/
 dist/
 *.spec
 
-# Executables in the application folder
-# We want to track the .bat and .txt, but not the .exe files
-SeamCarvingApp/*.exe
+# ALL_SETUP.bat log file
+build_log.txt
 
 # Generated output images in the application folder
 # This will ignore outputs but keep input.jpg
