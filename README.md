@@ -22,10 +22,3 @@ How To Use
 How to Build
 - Refer to HOW_TO_BUILD.txt to build the .exe files
 
-Source Files are:
-- dynamic_programming_seam_carving.py (Dynamic Programming)
-- greedy_algorithm_seam_carving.py (Greedy Method)
-- image_comparison_viewer.py
-
-Bonus:
-- CI/CD (using Github Actions, refer to /.github/workflows/ci-cd.yml)
