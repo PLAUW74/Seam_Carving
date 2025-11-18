@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Interactive Seam Carving Tool using OpenCV Trackbars
+(Modified for performance and stability)
 """
 
 import cv2
@@ -48,7 +49,6 @@ def find_image_path(input_path):
     return None
 
 # --- We need a modified carve function that works on a copy ---
-# This is slightly different from the one in the main script
 def carve(image, num_seams, direction):
     """
     Carves an image. This version is simplified for the
@@ -76,12 +76,16 @@ def carve(image, num_seams, direction):
 original_image = None
 current_image = None
 window_name = "Interactive Seam Carving"
+TRACKBARS_INITIALIZED = False
 
-def on_trackbar_change(val):
+def update_image():
     """
-    Callback function for when a slider is moved.
+    Callback function for when sliders have changed.
     """
-    global original_image, current_image, window_name
+    global original_image, current_image, window_name, TRACKBARS_INITIALIZED
+
+    if not TRACKBARS_INITIALIZED:
+        return
     
     # Get current slider positions
     target_width_seams = cv2.getTrackbarPos("Width", window_name)
@@ -93,29 +97,32 @@ def on_trackbar_change(val):
     seams_to_remove_v = w - target_width_seams
     seams_to_remove_h = h - target_height_seams
     
-    print("\n--- New Request ---")
-    print(f"Target size: {target_width_seams}w x {target_height_seams}h")
-    
-    # Start from a fresh copy of the original image
-    temp_image = np.copy(original_image)
-    
-    # 1. Carve Vertically (Width)
-    if seams_to_remove_v > 0:
-        print(f"Removing {seams_to_remove_v} vertical seams...")
-        temp_image = carve(temp_image, seams_to_remove_v, "vertical")
-    
-    # 2. Carve Horizontally (Height)
-    if seams_to_remove_h > 0:
-        print(f"Removing {seams_to_remove_h} horizontal seams...")
-        temp_image = carve(temp_image, seams_to_remove_h, "horizontal")
+    # Check if a change is actually needed
+    if seams_to_remove_v == 0 and seams_to_remove_h == 0:
+        current_image = original_image.copy() # Reset to original
+    else:
+        print("\n--- New Request ---")
+        print(f"Target size: {target_width_seams}w x {target_height_seams}h")
         
-    print("\nUpdate complete.")
-    
-    # Update the global current image
-    current_image = temp_image
+        # Start from a fresh copy of the original image
+        temp_image = np.copy(original_image)
+        
+        # 1. Carve Vertically (Width)
+        if seams_to_remove_v > 0:
+            print(f"Removing {seams_to_remove_v} vertical seams...")
+            temp_image = carve(temp_image, seams_to_remove_v, "vertical")
+        
+        # 2. Carve Horizontally (Height)
+        if seams_to_remove_h > 0:
+            print(f"Removing {seams_to_remove_h} horizontal seams...")
+            temp_image = carve(temp_image, seams_to_remove_h, "horizontal")
+            
+        print("\nUpdate complete.")
+        
+        # Update the global current image
+        current_image = temp_image
     
     # --- Display the final image ---
-    # Create a blank canvas to show the image (in case size is small)
     display_h, display_w = original_image.shape[:2]
     display_canvas = np.zeros((display_h, display_w, 3), dtype=np.uint8)
     
@@ -127,7 +134,7 @@ def on_trackbar_change(val):
 
 
 def main():
-    global original_image, current_image, window_name
+    global original_image, current_image, window_name, TRACKBARS_INITIALIZED
     
     parser = argparse.ArgumentParser(
         description="Interactive Seam Carving Tool"
@@ -156,10 +163,9 @@ def main():
     # Create a window
     cv2.namedWindow(window_name, cv2.WINDOW_AUTOSIZE)
 
-    # Create trackbars
-    # The 'on_trackbar_change' function is called *only* when the slider is moved
-    cv2.createTrackbar("Width", window_name, w, w, on_trackbar_change)
-    cv2.createTrackbar("Height", window_name, h, h, on_trackbar_change)
+    # Create trackbars with a DUMMY callback
+    cv2.createTrackbar("Width", window_name, w, w, lambda x: None)
+    cv2.createTrackbar("Height", window_name, h, h, lambda x: None)
     
     # Set min values for trackbars
     cv2.setTrackbarMin("Width", window_name, 1)
@@ -167,23 +173,49 @@ def main():
 
     print("--- Interactive Seam Carving ---")
     print("Move the sliders to resize the image.")
+    print("The image will update when you release the slider.")
     print("Press 's' to save the current result.")
     print("Press 'q' or ESC to quit.")
 
-    # Show the initial image (on a canvas)
+    # Show the initial image
     display_canvas = np.zeros((h, w, 3), dtype=np.uint8)
     display_canvas[0:h, 0:w] = current_image
     cv2.imshow(window_name, display_canvas)
 
+    TRACKBARS_INITIALIZED = True
+
+    last_w = w
+    last_h = h
+    
     while True:
-        key = cv2.waitKey(0) & 0xFF
+        key = cv2.waitKey(50) & 0xFF
+        
+        current_w = cv2.getTrackbarPos("Width", window_name)
+        current_h = cv2.getTrackbarPos("Height", window_name)
+        
+        if current_w != last_w or current_h != last_h:
+            print("Slider change detected, running update...")
+            update_image()
+            last_w = current_w
+            last_h = current_h
         
         if key == ord('q') or key == 27: # 'q' or ESC
             break
         elif key == ord('s'):
-            save_path = "interactive_result.jpg"
+            # --- THIS IS THE MODIFIED BLOCK ---
+            images_dir = "images"
+            save_path = os.path.join(images_dir, "interactive_result.jpg")
+            
+            # Ensure the 'images' directory exists
+            try:
+                os.makedirs(images_dir, exist_ok=True)
+            except OSError as e:
+                print(f"\nError creating directory {images_dir}: {e}")
+                continue # Skip saving
+
             cv2.imwrite(save_path, current_image)
             print(f"\nImage saved to {save_path}")
+            # --- END OF MODIFIED BLOCK ---
 
     cv2.destroyAllWindows()
 

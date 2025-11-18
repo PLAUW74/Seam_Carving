@@ -1,0 +1,571 @@
+Requirement already satisfied: pyinstaller in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (6.16.0)
+Requirement already satisfied: altgraph in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (from pyinstaller) (0.17.4)
+Requirement already satisfied: packaging>=22.0 in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (from pyinstaller) (25.0)
+Requirement already satisfied: pefile!=2024.8.26,>=2022.5.30 in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (from pyinstaller) (2023.2.7)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.8 in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (from pyinstaller) (2025.9)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (from pyinstaller) (0.2.3)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (from pyinstaller) (80.9.0)
+Requirement already satisfied: numpy in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (2.2.6)
+Requirement already satisfied: opencv-python in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (4.12.0.88)
+Requirement already satisfied: scipy in c:\users\owner\documents\github\seam_carving\python_portable\lib\site-packages (1.16.3)
+121 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+121 INFO: Python: 3.11.9
+128 INFO: Platform: Windows-10-10.0.19045-SP0
+128 INFO: Python environment: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable
+128 INFO: wrote C:\Users\Owner\Documents\GitHub\Seam_Carving\SeamCarvingApp.spec
+132 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\python311.zip',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving']
+406 INFO: checking Analysis
+406 INFO: Building Analysis because Analysis-00.toc is non existent
+406 INFO: Looking for Python shared library...
+406 INFO: Using Python shared library: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\python311.dll
+406 INFO: Running Analysis Analysis-00.toc
+406 INFO: Target bytecode optimization level: 0
+406 INFO: Initializing module dependency graph...
+407 INFO: Initializing module graph hook caches...
+420 INFO: Analyzing modules for base_library.zip ...
+1121 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1155 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1912 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2520 INFO: Caching module dependency graph...
+2545 INFO: Analyzing C:\Users\Owner\Documents\GitHub\Seam_Carving\SeamCarvingApp.py
+2549 INFO: Processing module hooks (post-graph stage)...
+2553 INFO: Performing binary vs. data reclassification (1 entries)
+2553 INFO: Looking for ctypes DLLs
+2560 INFO: Analyzing run-time hooks ...
+2561 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+2564 INFO: Creating base_library.zip...
+2577 INFO: Looking for dynamic libraries
+2661 INFO: Extra DLL search directories (AddDllDirectory): []
+2661 INFO: Extra DLL search directories (PATH): []
+2853 INFO: Warnings written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\SeamCarvingApp\warn-SeamCarvingApp.txt
+2866 INFO: Graph cross-reference written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\SeamCarvingApp\xref-SeamCarvingApp.html
+2879 INFO: checking PYZ
+2879 INFO: Building PYZ because PYZ-00.toc is non existent
+2879 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\SeamCarvingApp\PYZ-00.pyz
+2968 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\SeamCarvingApp\PYZ-00.pyz completed successfully.
+2972 INFO: checking PKG
+2972 INFO: Building PKG because PKG-00.toc is non existent
+2972 INFO: Building PKG (CArchive) SeamCarvingApp.pkg
+4441 INFO: Building PKG (CArchive) SeamCarvingApp.pkg completed successfully.
+4443 INFO: Bootloader C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+4443 INFO: checking EXE
+4443 INFO: Building EXE because EXE-00.toc is non existent
+4443 INFO: Building EXE from EXE-00.toc
+4443 INFO: Copying bootloader EXE to C:\Users\Owner\Documents\GitHub\Seam_Carving\dist\SeamCarvingApp.exe
+4447 INFO: Copying icon to EXE
+4449 INFO: Copying 0 resources to EXE
+4449 INFO: Embedding manifest in EXE
+4451 INFO: Appending PKG archive to EXE
+4455 INFO: Fixing EXE headers
+4511 INFO: Building EXE from EXE-00.toc completed successfully.
+4513 INFO: Build complete! The results are available in: C:\Users\Owner\Documents\GitHub\Seam_Carving\dist
+118 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+118 INFO: Python: 3.11.9
+124 INFO: Platform: Windows-10-10.0.19045-SP0
+124 INFO: Python environment: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable
+124 INFO: wrote C:\Users\Owner\Documents\GitHub\Seam_Carving\dynamic_programming_seam_carving.spec
+197 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\python311.zip',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving']
+466 INFO: Appending 'datas' from .spec
+471 INFO: checking Analysis
+472 INFO: Building Analysis because Analysis-00.toc is non existent
+472 INFO: Looking for Python shared library...
+472 INFO: Using Python shared library: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\python311.dll
+472 INFO: Running Analysis Analysis-00.toc
+472 INFO: Target bytecode optimization level: 0
+472 INFO: Initializing module dependency graph...
+472 INFO: Initializing module graph hook caches...
+485 INFO: Analyzing modules for base_library.zip ...
+1158 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1191 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1827 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2321 INFO: Caching module dependency graph...
+2345 INFO: Analyzing C:\Users\Owner\Documents\GitHub\Seam_Carving\dynamic_programming_seam_carving.py
+2354 INFO: Processing standard module hook 'hook-cv2.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+2695 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2891 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2949 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3433 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3506 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3537 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3660 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+4188 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+4189 INFO: SetuptoolsInfo: initializing cached setuptools info...
+6810 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+6815 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+6825 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6825 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+7022 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7030 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7045 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7057 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7140 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7140 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+7146 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7147 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7148 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7148 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+7153 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7154 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+7232 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7233 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+7238 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7238 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+7290 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+7335 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7335 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+7350 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7351 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7351 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+7479 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7480 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+7804 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8401 INFO: Processing module hooks (post-graph stage)...
+8746 INFO: Performing binary vs. data reclassification (80 entries)
+8756 INFO: Looking for ctypes DLLs
+8800 INFO: Analyzing run-time hooks ...
+8802 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8803 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8805 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8806 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8814 INFO: Creating base_library.zip...
+8828 INFO: Looking for dynamic libraries
+9212 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9212 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9681 INFO: Warnings written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\dynamic_programming_seam_carving\warn-dynamic_programming_seam_carving.txt
+9730 INFO: Graph cross-reference written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\dynamic_programming_seam_carving\xref-dynamic_programming_seam_carving.html
+9755 INFO: checking PYZ
+9755 INFO: Building PYZ because PYZ-00.toc is non existent
+9755 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\dynamic_programming_seam_carving\PYZ-00.pyz
+10168 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\dynamic_programming_seam_carving\PYZ-00.pyz completed successfully.
+10180 INFO: checking PKG
+10180 INFO: Building PKG because PKG-00.toc is non existent
+10180 INFO: Building PKG (CArchive) dynamic_programming_seam_carving.pkg
+21387 INFO: Building PKG (CArchive) dynamic_programming_seam_carving.pkg completed successfully.
+21390 INFO: Bootloader C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+21390 INFO: checking EXE
+21390 INFO: Building EXE because EXE-00.toc is non existent
+21390 INFO: Building EXE from EXE-00.toc
+21391 INFO: Copying bootloader EXE to C:\Users\Owner\Documents\GitHub\Seam_Carving\dist\dynamic_programming_seam_carving.exe
+21394 INFO: Copying icon to EXE
+21397 INFO: Copying 0 resources to EXE
+21397 INFO: Embedding manifest in EXE
+21399 INFO: Appending PKG archive to EXE
+21434 INFO: Fixing EXE headers
+21621 INFO: Building EXE from EXE-00.toc completed successfully.
+21624 INFO: Build complete! The results are available in: C:\Users\Owner\Documents\GitHub\Seam_Carving\dist
+117 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+117 INFO: Python: 3.11.9
+124 INFO: Platform: Windows-10-10.0.19045-SP0
+124 INFO: Python environment: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable
+124 INFO: wrote C:\Users\Owner\Documents\GitHub\Seam_Carving\greedy_algorithm_seam_carving.spec
+194 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\python311.zip',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving']
+468 INFO: Appending 'datas' from .spec
+473 INFO: checking Analysis
+474 INFO: Building Analysis because Analysis-00.toc is non existent
+474 INFO: Looking for Python shared library...
+474 INFO: Using Python shared library: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\python311.dll
+474 INFO: Running Analysis Analysis-00.toc
+474 INFO: Target bytecode optimization level: 0
+474 INFO: Initializing module dependency graph...
+474 INFO: Initializing module graph hook caches...
+487 INFO: Analyzing modules for base_library.zip ...
+1185 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1220 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1826 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2346 INFO: Caching module dependency graph...
+2370 INFO: Analyzing C:\Users\Owner\Documents\GitHub\Seam_Carving\greedy_algorithm_seam_carving.py
+2379 INFO: Processing standard module hook 'hook-cv2.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+2722 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2922 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2981 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3469 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3541 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3573 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3697 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+4231 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+4232 INFO: SetuptoolsInfo: initializing cached setuptools info...
+6772 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+6776 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+6786 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6787 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+6987 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+6997 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7010 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7024 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7106 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7106 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+7112 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7114 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7115 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7115 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+7120 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7120 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+7198 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7200 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+7204 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7204 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+7258 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+7302 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7303 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+7316 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7319 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7319 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+7445 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7445 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+7770 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8362 INFO: Processing module hooks (post-graph stage)...
+8706 INFO: Performing binary vs. data reclassification (80 entries)
+8717 INFO: Looking for ctypes DLLs
+8759 INFO: Analyzing run-time hooks ...
+8762 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8763 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8765 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8766 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8773 INFO: Creating base_library.zip...
+8788 INFO: Looking for dynamic libraries
+9173 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9173 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9634 INFO: Warnings written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\greedy_algorithm_seam_carving\warn-greedy_algorithm_seam_carving.txt
+9686 INFO: Graph cross-reference written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\greedy_algorithm_seam_carving\xref-greedy_algorithm_seam_carving.html
+9711 INFO: checking PYZ
+9711 INFO: Building PYZ because PYZ-00.toc is non existent
+9711 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\greedy_algorithm_seam_carving\PYZ-00.pyz
+10124 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\greedy_algorithm_seam_carving\PYZ-00.pyz completed successfully.
+10136 INFO: checking PKG
+10136 INFO: Building PKG because PKG-00.toc is non existent
+10136 INFO: Building PKG (CArchive) greedy_algorithm_seam_carving.pkg
+21314 INFO: Building PKG (CArchive) greedy_algorithm_seam_carving.pkg completed successfully.
+21317 INFO: Bootloader C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+21317 INFO: checking EXE
+21318 INFO: Building EXE because EXE-00.toc is non existent
+21318 INFO: Building EXE from EXE-00.toc
+21318 INFO: Copying bootloader EXE to C:\Users\Owner\Documents\GitHub\Seam_Carving\dist\greedy_algorithm_seam_carving.exe
+21322 INFO: Copying icon to EXE
+21324 INFO: Copying 0 resources to EXE
+21324 INFO: Embedding manifest in EXE
+21327 INFO: Appending PKG archive to EXE
+21361 INFO: Fixing EXE headers
+21545 INFO: Building EXE from EXE-00.toc completed successfully.
+21548 INFO: Build complete! The results are available in: C:\Users\Owner\Documents\GitHub\Seam_Carving\dist
+117 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+117 INFO: Python: 3.11.9
+123 INFO: Platform: Windows-10-10.0.19045-SP0
+123 INFO: Python environment: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable
+124 INFO: wrote C:\Users\Owner\Documents\GitHub\Seam_Carving\graph_cut_seam_carving.spec
+194 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\python311.zip',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving']
+464 INFO: Appending 'datas' from .spec
+470 INFO: checking Analysis
+470 INFO: Building Analysis because Analysis-00.toc is non existent
+470 INFO: Looking for Python shared library...
+470 INFO: Using Python shared library: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\python311.dll
+470 INFO: Running Analysis Analysis-00.toc
+470 INFO: Target bytecode optimization level: 0
+470 INFO: Initializing module dependency graph...
+471 INFO: Initializing module graph hook caches...
+483 INFO: Analyzing modules for base_library.zip ...
+1171 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1204 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1910 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2379 INFO: Caching module dependency graph...
+2404 INFO: Analyzing C:\Users\Owner\Documents\GitHub\Seam_Carving\graph_cut_seam_carving.py
+2413 INFO: Processing standard module hook 'hook-cv2.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+2753 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2950 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3008 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3493 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3565 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3596 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3718 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+4249 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+4249 INFO: SetuptoolsInfo: initializing cached setuptools info...
+6810 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+6815 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+6825 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6825 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+7023 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7032 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7046 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7059 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7141 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7141 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+7148 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7149 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7149 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7150 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+7155 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7155 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+7234 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7234 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+7239 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7240 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+7293 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+7338 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7338 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+7352 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7354 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7354 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+7481 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7481 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+7803 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8397 INFO: Processing standard module hook 'hook-scipy.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+9227 INFO: Processing standard module hook 'hook-scipy.linalg.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+9309 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+10138 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+10425 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+11178 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+11560 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+12206 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+12538 INFO: Processing module hooks (post-graph stage)...
+12591 WARNING: Hidden import "scipy.special._cdflib" not found!
+12921 INFO: Performing binary vs. data reclassification (81 entries)
+12931 INFO: Looking for ctypes DLLs
+13097 INFO: Analyzing run-time hooks ...
+13100 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+13102 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+13103 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+13104 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+13117 INFO: Creating base_library.zip...
+13146 INFO: Looking for dynamic libraries
+13962 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\scipy.libs', 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+13962 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+15585 INFO: Warnings written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\graph_cut_seam_carving\warn-graph_cut_seam_carving.txt
+15665 INFO: Graph cross-reference written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\graph_cut_seam_carving\xref-graph_cut_seam_carving.html
+15698 INFO: checking PYZ
+15698 INFO: Building PYZ because PYZ-00.toc is non existent
+15698 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\graph_cut_seam_carving\PYZ-00.pyz
+16408 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\graph_cut_seam_carving\PYZ-00.pyz completed successfully.
+16428 INFO: checking PKG
+16428 INFO: Building PKG because PKG-00.toc is non existent
+16428 INFO: Building PKG (CArchive) graph_cut_seam_carving.pkg
+33837 INFO: Building PKG (CArchive) graph_cut_seam_carving.pkg completed successfully.
+33842 INFO: Bootloader C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+33842 INFO: checking EXE
+33842 INFO: Building EXE because EXE-00.toc is non existent
+33842 INFO: Building EXE from EXE-00.toc
+33842 INFO: Copying bootloader EXE to C:\Users\Owner\Documents\GitHub\Seam_Carving\dist\graph_cut_seam_carving.exe
+33845 INFO: Copying icon to EXE
+33848 INFO: Copying 0 resources to EXE
+33848 INFO: Embedding manifest in EXE
+33850 INFO: Appending PKG archive to EXE
+33903 INFO: Fixing EXE headers
+34167 INFO: Building EXE from EXE-00.toc completed successfully.
+34172 INFO: Build complete! The results are available in: C:\Users\Owner\Documents\GitHub\Seam_Carving\dist
+118 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+118 INFO: Python: 3.11.9
+125 INFO: Platform: Windows-10-10.0.19045-SP0
+125 INFO: Python environment: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable
+126 INFO: wrote C:\Users\Owner\Documents\GitHub\Seam_Carving\interactive_seam_carving.spec
+199 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\python311.zip',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving']
+468 INFO: Appending 'datas' from .spec
+472 INFO: checking Analysis
+472 INFO: Building Analysis because Analysis-00.toc is non existent
+472 INFO: Looking for Python shared library...
+472 INFO: Using Python shared library: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\python311.dll
+472 INFO: Running Analysis Analysis-00.toc
+472 INFO: Target bytecode optimization level: 0
+472 INFO: Initializing module dependency graph...
+473 INFO: Initializing module graph hook caches...
+486 INFO: Analyzing modules for base_library.zip ...
+1171 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1204 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1951 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2556 INFO: Caching module dependency graph...
+2579 INFO: Analyzing C:\Users\Owner\Documents\GitHub\Seam_Carving\interactive_seam_carving.py
+2587 INFO: Processing standard module hook 'hook-cv2.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+2933 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3131 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3188 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3669 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3742 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3775 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3895 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+4425 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+4427 INFO: SetuptoolsInfo: initializing cached setuptools info...
+6966 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+6970 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+6981 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6982 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+7180 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7189 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7202 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7214 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7296 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7297 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+7303 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7304 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7305 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7305 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+7310 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7310 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+7389 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7389 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+7394 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7394 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+7447 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+7492 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7492 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+7506 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7508 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7508 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+7635 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7635 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+7956 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8550 INFO: Processing module hooks (post-graph stage)...
+8892 INFO: Performing binary vs. data reclassification (80 entries)
+8902 INFO: Looking for ctypes DLLs
+8944 INFO: Analyzing run-time hooks ...
+8948 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8949 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8950 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8951 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8960 INFO: Creating base_library.zip...
+8974 INFO: Looking for dynamic libraries
+9356 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9356 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9819 INFO: Warnings written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\interactive_seam_carving\warn-interactive_seam_carving.txt
+9870 INFO: Graph cross-reference written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\interactive_seam_carving\xref-interactive_seam_carving.html
+9894 INFO: checking PYZ
+9894 INFO: Building PYZ because PYZ-00.toc is non existent
+9894 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\interactive_seam_carving\PYZ-00.pyz
+10310 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\interactive_seam_carving\PYZ-00.pyz completed successfully.
+10322 INFO: checking PKG
+10323 INFO: Building PKG because PKG-00.toc is non existent
+10323 INFO: Building PKG (CArchive) interactive_seam_carving.pkg
+21511 INFO: Building PKG (CArchive) interactive_seam_carving.pkg completed successfully.
+21515 INFO: Bootloader C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+21515 INFO: checking EXE
+21515 INFO: Building EXE because EXE-00.toc is non existent
+21515 INFO: Building EXE from EXE-00.toc
+21515 INFO: Copying bootloader EXE to C:\Users\Owner\Documents\GitHub\Seam_Carving\dist\interactive_seam_carving.exe
+21519 INFO: Copying icon to EXE
+21522 INFO: Copying 0 resources to EXE
+21522 INFO: Embedding manifest in EXE
+21524 INFO: Appending PKG archive to EXE
+21561 INFO: Fixing EXE headers
+21743 INFO: Building EXE from EXE-00.toc completed successfully.
+21746 INFO: Build complete! The results are available in: C:\Users\Owner\Documents\GitHub\Seam_Carving\dist
+118 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+118 INFO: Python: 3.11.9
+124 INFO: Platform: Windows-10-10.0.19045-SP0
+125 INFO: Python environment: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable
+125 INFO: wrote C:\Users\Owner\Documents\GitHub\Seam_Carving\image_comparison_viewer.spec
+197 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\python311.zip',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving']
+465 INFO: Appending 'datas' from .spec
+470 INFO: checking Analysis
+470 INFO: Building Analysis because Analysis-00.toc is non existent
+470 INFO: Looking for Python shared library...
+470 INFO: Using Python shared library: C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\python311.dll
+470 INFO: Running Analysis Analysis-00.toc
+471 INFO: Target bytecode optimization level: 0
+471 INFO: Initializing module dependency graph...
+471 INFO: Initializing module graph hook caches...
+484 INFO: Analyzing modules for base_library.zip ...
+1175 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1208 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+1822 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2339 INFO: Caching module dependency graph...
+2364 INFO: Analyzing C:\Users\Owner\Documents\GitHub\Seam_Carving\image_comparison_viewer.py
+2372 INFO: Processing standard module hook 'hook-cv2.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+2712 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2909 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+2967 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3458 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3531 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3562 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+3685 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+4221 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+4222 INFO: SetuptoolsInfo: initializing cached setuptools info...
+6806 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+6810 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+6821 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6821 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+7021 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7030 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7045 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7057 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7140 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7141 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+7147 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7148 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7149 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7149 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+7154 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7154 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+7233 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7234 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+7238 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7239 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+7292 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+7336 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7337 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+7351 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks'
+7352 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7352 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+7480 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7480 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+7802 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8403 INFO: Processing module hooks (post-graph stage)...
+8746 INFO: Performing binary vs. data reclassification (80 entries)
+8756 INFO: Looking for ctypes DLLs
+8809 INFO: Analyzing run-time hooks ...
+8811 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8813 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8814 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8815 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+8823 INFO: Creating base_library.zip...
+8837 INFO: Looking for dynamic libraries
+9220 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9220 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Owner\\Documents\\GitHub\\Seam_Carving\\python_portable\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+9684 INFO: Warnings written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\image_comparison_viewer\warn-image_comparison_viewer.txt
+9732 INFO: Graph cross-reference written to C:\Users\Owner\Documents\GitHub\Seam_Carving\build\image_comparison_viewer\xref-image_comparison_viewer.html
+9756 INFO: checking PYZ
+9756 INFO: Building PYZ because PYZ-00.toc is non existent
+9756 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\image_comparison_viewer\PYZ-00.pyz
+10168 INFO: Building PYZ (ZlibArchive) C:\Users\Owner\Documents\GitHub\Seam_Carving\build\image_comparison_viewer\PYZ-00.pyz completed successfully.
+10180 INFO: checking PKG
+10180 INFO: Building PKG because PKG-00.toc is non existent
+10180 INFO: Building PKG (CArchive) image_comparison_viewer.pkg
+21356 INFO: Building PKG (CArchive) image_comparison_viewer.pkg completed successfully.
+21360 INFO: Bootloader C:\Users\Owner\Documents\GitHub\Seam_Carving\python_portable\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+21360 INFO: checking EXE
+21360 INFO: Building EXE because EXE-00.toc is non existent
+21360 INFO: Building EXE from EXE-00.toc
+21360 INFO: Copying bootloader EXE to C:\Users\Owner\Documents\GitHub\Seam_Carving\dist\image_comparison_viewer.exe
+21364 INFO: Copying icon to EXE
+21366 INFO: Copying 0 resources to EXE
+21366 INFO: Embedding manifest in EXE
+21368 INFO: Appending PKG archive to EXE
+21404 INFO: Fixing EXE headers
+21587 INFO: Building EXE from EXE-00.toc completed successfully.
+21590 INFO: Build complete! The results are available in: C:\Users\Owner\Documents\GitHub\Seam_Carving\dist
