@@ -2,32 +2,49 @@
                         SEAM CARVING TOOL - HOW TO USE
 ================================================================================
 
-This folder contains the pre-built application. No installation needed.
+This folder contains the pre-built application.
+No installation needed.
 
 HOW TO USE
 ----------
 
 1. Put your images in the "images" folder.
+   (Supported formats: .jpg, .jpeg, .png)
 
-2. Double-click "SeamCarvingApp.bat".
+2. Double-click "SeamCarvingApp.exe".
+   (Do not run the .bat file, use the Application .exe).
 
 3. Choose an option from the menu:
-   - 1-3 (Standard Algorithms):
-     - You will be asked for:
-       - Input image name (e.g., input.jpg)
-       - Output image name (e.g., input_carved.jpg)
-       - Number of seams (e.g., 50)
-       - Direction: "vertical" (to make narrower) or "horizontal" (to make shorter).
-       - Visualize: 'y' to see every seam being removed (slow).
 
-   - 4 (Interactive Tool):
+   OPTIONS 1-3 (Standard Algorithms):
+   ----------------------------------
+   1. Dynamic Programming (Optimal)
+   2. Greedy Algorithm (Fast)
+   3. Graph-Cut (Shortest Path Algorithm)
+
      - You will be asked for:
        - Input image name (e.g., input.jpg)
-     - A window will open.
-     - Move the sliders to resize the image in real-time.
-     - Press 's' to save your result as "interactive_result.jpg".
-     - Press 'q' or ESC to close the window.
+       - Output image name (e.g., result)
+       - Number of seams to remove (e.g., 50)
+       - Direction: "vertical" (width) or "horizontal" (height)
+     
+     - Visualization:
+       - Answer 'y' to see the red seam being removed step-by-step.
+       - Note: This significantly slows down the process.
+
+   OPTION 4 (Interactive Tool):
+   ----------------------------
+     - You will be asked for the input image name.
+     - The tool will take a moment to "Pre-compute" the cache. 
+       Please wait for the loading percentage to finish.
+     
+     - Once the window opens:
+       - Drag the "Width" slider for instant resizing.
+       - Drag the "Height" slider (updates when you release the mouse).
+       - Press 's' to save the result to "images/interactive_result.jpg".
+       - Press 'q' or ESC to close the tool.
 
 4. Check your results in the "images" folder.
+   - For standard algorithms, a "comparison.jpg" is also generated.
 
 ================================================================================

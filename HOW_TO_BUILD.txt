@@ -2,6 +2,27 @@
                         SEAM CARVING TOOL - HOW TO BUILD
 ================================================================================
 
-- After editing the source files, if necessary.
+This repository is set up with a Portable Python environment. 
+You do NOT need to install Python or libraries globally on your machine.
 
-- Run ALL_SETUP.bat
+INSTRUCTIONS:
+-------------
+
+1. Ensure the "python_portable" folder exists in the root directory.
+   (This contains the isolated Python environment required for the build).
+
+2. Double-click "ALL_SETUP.bat".
+
+   - This script will:
+     1. Clean up old build artifacts.
+     2. Install necessary libraries (numpy, opencv, scipy, pyinstaller) 
+        into the portable environment.
+     3. Compile all Python scripts into standalone .exe files.
+     4. Move the executables into the "SeamCarvingApp" folder.
+
+3. Check "build_log.txt" if any errors occur.
+
+4. Once complete, navigate to the "SeamCarvingApp" folder and run
+   "SeamCarvingApp.exe" to test your build.
+
+================================================================================
