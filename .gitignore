@@ -43,9 +43,14 @@ python_portable/Lib/site-packages/packaging/
 python_portable/Lib/site-packages/pyinstaller_hooks_contrib/
 python_portable/Lib/site-packages/pywin32_ctypes/
 
-# Ignore installed package metadata
+# Ignore installed package metadata (BUT KEEP PIP)
 python_portable/Lib/site-packages/*.dist-info/
 python_portable/Lib/site-packages/*.egg-info/
+
+# !!! CRITICAL EXCEPTIONS: Force Git to track pip/setuptools !!!
+!python_portable/Lib/site-packages/pip-*.dist-info/
+!python_portable/Lib/site-packages/setuptools-*.dist-info/
+!python_portable/Lib/site-packages/wheel-*.dist-info/
 
 # Ignore scripts installed by pip in Scripts/
 python_portable/Scripts/pyinstaller.exe

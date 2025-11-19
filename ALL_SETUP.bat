@@ -15,6 +15,30 @@ rmdir /S /Q build
 del *.spec
 echo.
 
+REM --- NEW: PIP SELF-REPAIR (Robust Check) ---
+echo [Self-Check] Checking Python environment integrity...
+REM We attempt to import the specific internal module that was crashing
+.\python_portable\python.exe -c "import pip._internal.operations.build" >nul 2>&1
+if %errorlevel% neq 0 (
+    echo [!] Pip is corrupted or missing key modules.
+    echo [!] Initiating auto-repair...
+    echo.
+    
+    echo   Downloading get-pip.py...
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    
+    echo   Reinstalling pip...
+    .\python_portable\python.exe get-pip.py --force-reinstall --no-warn-script-location
+    
+    echo   Cleaning up...
+    del get-pip.py
+    echo.
+    echo [!] Repair complete. Retrying build...
+) else (
+    echo [OK] Python environment is healthy.
+)
+echo.
+
 pause
 cls
 
@@ -52,7 +76,6 @@ echo   Building greedy_algorithm_seam_carving.exe...
 .\python_portable\python.exe -m PyInstaller --onefile --collect-data cv2 greedy_algorithm_seam_carving.py >> %LOGFILE% 2>&1
 
 echo   Building graph_cut_seam_carving.exe...
-REM --- THIS IS THE UPDATED LINE ---
 .\python_portable\python.exe -m PyInstaller --onefile --collect-data cv2 --hidden-import="scipy.sparse.csgraph._shortest_path" graph_cut_seam_carving.py >> %LOGFILE% 2>&1
 
 echo   Building interactive_seam_carving.exe...
@@ -62,7 +85,7 @@ echo   Building image_comparison_viewer.exe...
 .\python_portable\python.exe -m PyInstaller --onefile --collect-data cv2 image_comparison_viewer.py >> %LOGFILE% 2>&1
 echo.
 
-REM Step 4: Move executables (with error checking)
+REM Step 4: Move executables
 echo [Step 4/6] Moving executables to 'SeamCarvingApp' folder...
 
 if not exist "dist\SeamCarvingApp.exe" ( echo ERROR: SeamCarvingApp.exe FAILED TO BUILD. Check %LOGFILE%. & pause & goto end )
@@ -92,7 +115,7 @@ del *.spec
 echo.
 
 echo =======================================================
-echo " BUILD AND SETUP COMPLETE!"
+echo "BUILD AND SETUP COMPLETE!"
 echo =======================================================
 echo.
 echo All .exe files have been built and moved into the 
